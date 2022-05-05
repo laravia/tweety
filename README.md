@@ -1,2 +1,2 @@
 # tweety
-laravia plugin tweety
+tweety package

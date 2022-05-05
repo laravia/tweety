@@ -1,0 +1,48 @@
+{
+    "minimum-stability": "dev",
+    "name": "laravia/tweety",
+    "description": "laravia package: tweety",
+    "license": "license",
+    "authors": [
+        {
+            "name": "laravia",
+            "email": "code@laravia.art",
+            "homepage": "https://laravia.art"
+        }
+    ],
+    "homepage": "https://laravia.art",
+    "keywords": [
+        "Laravel",
+        "Laravia",
+        "Package"
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravia\\Tweety\\App\\": "./src/app",
+            "Laravia\\Tweety\\Database\\": "./src/database",
+            "Laravia\\Tweety\\Database\\Seeders\\": "./src/database/seeders"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravia\\Tweety\\App\\": "./src/app",
+            "Laravia\\Tweety\\Database\\": "./src/database",
+            "Laravia\\Tweety\\Database\\Seeders\\": "./src/database/seeders",
+            "Laravia\\Tweety\\Tests\\": "./src/tests"
+        }
+    },
+    "scripts": {
+        "post-root-package-update": []
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravia\\Tweety\\App\\Providers\\TweetyServiceProvider"
+            ]
+        }
+    }
+}
